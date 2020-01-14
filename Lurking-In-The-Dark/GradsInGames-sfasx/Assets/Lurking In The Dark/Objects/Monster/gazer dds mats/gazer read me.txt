@@ -1,0 +1,31 @@
+Thank you for buying my Gazer Model!
+
+This Zipped File includes:
+
+4 Texture Maps-all at 1024x1024
+
+*Diffuse
+*Specularity
+*Self Illumination
+*Normal
+
+Custom Rig- Built with Bones, HI Solvers, control splines, and Custom Attributes, to enable each tentacle to move independently-
+
+Also Includes-
+
+*All tentacles control point
+*body control point
+*World (everything) control point
+*Swivel Targets for each arm
+
+2 Max files are included-
+*Gazer at rest
+*Gazer-float demo
+
+Also included: 
+2 Low-Poly Mesh Files
+
+*Gazer Mesh.obj 
+*Gazer Mesh.3ds
+
+Thanks again! Any questions/comments: Dave- theQiwiMan@hotmail.com
