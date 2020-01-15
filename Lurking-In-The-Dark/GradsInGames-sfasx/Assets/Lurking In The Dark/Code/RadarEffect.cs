@@ -111,6 +111,7 @@ public class RadarEffect : MonoBehaviour
 
             //- resets the radius by line index -//
             radius = 0.0f;
+            monsterRadius = 0.0f;
             time = 1.0f;
         }
         else

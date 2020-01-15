@@ -47,18 +47,6 @@ public class MonsterMoving : MonoBehaviour
 
     void Update()
     {
-        if (route.Count != 0)
-        {
-            for (int i = 0; i < Nodes.Length; i++)
-            {
-        //        if (route[route.Count - 1].closestToMonster == true)
-          //          if (Monster.transform.position == Nodes[i].transform.position)
-                //    {
-            //            route.Clear();
-              //      }
-
-            }
-        }
         if (Input.GetKeyDown(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.Joystick1Button7))
         {
             for (int i = 0; i < Nodes.Length; i++)
@@ -72,6 +60,11 @@ public class MonsterMoving : MonoBehaviour
             {
                 Nodes[i].PathWeighting = 0.0f;
                 Nodes[i].traveled = false;
+                if (Nodes[i].closestToMonster == true && route.Count != 0)
+                    if (route[route.Count - 1] == Nodes[i])
+                    { 
+                        route.Clear();
+                    }
             }
 
             FindClosest(Player.transform.position, true);
@@ -84,7 +77,7 @@ public class MonsterMoving : MonoBehaviour
             if (ElapsedTime > timeBeforeMove)
             {
                 ElapsedTime = 0.0f;
-                if (route.Count == 0)
+                if (route.Count == 0 || route == null)
                     GoTo(GetPath(FindClosest(Monster.transform.position, false), Nodes[Random.Range(0,32)]));
             }
             Debug.Log("RANDOM MOVE_______________________________");
