@@ -147,7 +147,7 @@ public class RadarEffect : MonoBehaviour
         breathingIn = false;
         mat.SetFloat("_PlayerRadius", playerRadius);
         mat.SetFloat("_FadeAmmount", playerFadeAmmount);
-        monsterRadius = 0.0f;
+        monsterRadius = 99999.0f;
         mat.SetFloat("_MonsterRadius", monsterRadius);
         mat.SetFloat("_MonsterWidth", 0);
     }

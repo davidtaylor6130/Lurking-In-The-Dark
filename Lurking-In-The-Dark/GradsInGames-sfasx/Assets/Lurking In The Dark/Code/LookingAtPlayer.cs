@@ -92,6 +92,7 @@ public class LookingAtPlayer : MonoBehaviour
                 Camera.gameObject.transform.position = Vector3.Lerp(Camera.gameObject.transform.position, finalCameraPosition.transform.position, speedOfCamera);
                 PlayerMovementDisable.enabled = false;
                 MonsterMoving.enabled = false;
+                MonsterMoving.StopMonster();
 
                 if (!playerDeath.isPlaying)
                 {

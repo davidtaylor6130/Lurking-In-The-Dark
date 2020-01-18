@@ -6,6 +6,7 @@ public class Pages_Switch : MonoBehaviour
 {
     [Header("GameObject Page Array")]
     public GameObject[] Pages = null;
+    public GameObject[] blankPages = null;
 
     [Header("PagesCollected")]
     public bool[] CollectedPage = new bool[9];
@@ -41,11 +42,11 @@ public class Pages_Switch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Joystick1Button1))
+        if (Input.GetKeyDown(KeyCode.Joystick1Button1) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             UpAPage();
         }
-        if (Input.GetKeyDown(KeyCode.Joystick1Button2))
+        if (Input.GetKeyDown(KeyCode.Joystick1Button2) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             DownAPage();
         }
@@ -53,9 +54,26 @@ public class Pages_Switch : MonoBehaviour
         for (int i = 0; i < Pages.Length; i++)
         {
             if (i == LookingAtPage && CollectedPage[i] == true)
+            {
                 Pages[i].SetActive(true);
+            }
             else
+            {
                 Pages[i].SetActive(false);
+            }
+
+            if (i == LookingAtPage && CollectedPage[i] == true)
+            {
+                blankPages[i].SetActive(false);
+            }
+            else if (i != LookingAtPage)
+            {
+                blankPages[i].SetActive(false);
+            }
+            else
+            {
+                blankPages[i].SetActive(true);
+            }
         }
     }
 }

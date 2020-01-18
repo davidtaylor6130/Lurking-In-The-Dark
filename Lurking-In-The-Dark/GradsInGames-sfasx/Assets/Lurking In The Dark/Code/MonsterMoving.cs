@@ -352,4 +352,9 @@ public class MonsterMoving : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(DoGoTo(route));
     }
+
+    public void StopMonster()
+    {
+        StopAllCoroutines();
+    }
 } 
