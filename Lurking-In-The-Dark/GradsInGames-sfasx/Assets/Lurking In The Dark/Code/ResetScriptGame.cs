@@ -17,11 +17,7 @@ public class ResetScriptGame : MonoBehaviour
     [Header("Other Reset Settings")]
     public GameObject[] PagesInGame = new GameObject[9];
     public Pages_Switch UiPages = null;
-
-    [Header("Radar Effect Reset")]
-    public float radius = 0.0f;
-    public float fadeAmmount = 0.0f;
-    public float width = 0.0f;
+    public GameDifficultySettings diffculty = null;
 
     public void ResetGame()
     {
@@ -35,9 +31,6 @@ public class ResetScriptGame : MonoBehaviour
             Monster.GetComponent<MonsterMoving>().enabled = true;
 
         // Reset the radius Effects
-        Player.GetComponent<RadarEffect>().playerRadius = radius;
-        Player.GetComponent<RadarEffect>().playerFadeAmmount = fadeAmmount;
-        Player.GetComponent<RadarEffect>().playerWidth = width;
         Player.GetComponent<RadarEffect>().SetPos();
 
         //Reset the Looking At Scripts
@@ -59,5 +52,7 @@ public class ResetScriptGame : MonoBehaviour
             PagesInGame[i].SetActive(true);
         }
         UiPages.CollectedPage[0] = true;
+
+        diffculty.Reset();
     }
 }

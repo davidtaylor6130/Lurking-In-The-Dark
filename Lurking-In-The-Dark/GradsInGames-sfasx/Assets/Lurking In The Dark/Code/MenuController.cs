@@ -9,6 +9,7 @@ public class MenuController : MonoBehaviour
     public GameObject Game = null;
     public GameObject MenuMain = null;
     public GameObject MenuOptions = null;
+    public GameDifficultySettings difficultySettings = null;
 
     [Header("Menu Selector Options")]
     public int selectorCountMainMenu = 0;
@@ -99,13 +100,13 @@ public class MenuController : MonoBehaviour
                 switch (selectorCountOptionsMenu)
                 {
                     case 0:
-                        //Easy
+                        Easy();
                         break;
                     case 1:
-                        //Medium
+                        Medium();
                         break;
                     case 2:
-                        //Hard
+                        Hard();
                         break;
                     case 3:
                         InOptions = false;
@@ -160,6 +161,30 @@ public class MenuController : MonoBehaviour
         {
             selectorCountOptionsMenu = input;
         }
+    }
+
+    public void Easy()
+    {
+        difficultySettings.Easy();
+        InOptions = false;
+        MenuMain.SetActive(true);
+        MenuOptions.SetActive(false);
+    }
+
+    public void Medium()
+    {
+        difficultySettings.Normal();
+        InOptions = false;
+        MenuMain.SetActive(true);
+        MenuOptions.SetActive(false);
+    }
+
+    public void Hard()
+    {
+        difficultySettings.Hard();
+        InOptions = false;
+        MenuMain.SetActive(true);
+        MenuOptions.SetActive(false);
     }
 
 }

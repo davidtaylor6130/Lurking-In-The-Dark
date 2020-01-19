@@ -30,6 +30,7 @@ public class MonsterMoving : MonoBehaviour
 
     [Header("Settings")]
     public float timeBeforeMove = 30.0f;
+    public float speed = 0.25f;
 
     //- private var -//
     [SerializeField] private float SingleNodeMoveTime = 0.5f;
@@ -322,7 +323,7 @@ public class MonsterMoving : MonoBehaviour
 
             while (t < SingleNodeMoveTime)
             {
-                t += (Time.deltaTime * 0.25f);
+                t += (Time.deltaTime * speed);
                 p = Vector3.Lerp(position, destination, t / SingleNodeMoveTime);
                 transform.position = p;
                 yield return null;
