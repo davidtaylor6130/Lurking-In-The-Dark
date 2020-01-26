@@ -56,25 +56,25 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Time: 0
+    - Time: 0.5755512
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _FadeAmmount: 31
+    - _FadeAmmount: 12.5
     - _FadeTime: 1.5
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
-    - _MonsterRadius: 263.2266
+    - _MonsterRadius: 42.4449
     - _MonsterWidth: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _PlayerRadius: 50
-    - _PlayerWidth: 50
-    - _Radius: 263.2266
+    - _PlayerRadius: 25
+    - _PlayerWidth: 25
+    - _Radius: 42.4449
     - _Radius1: 39.926178
     - _Radius2: 506.7732
     - _Radius3: 506.7732
@@ -88,7 +88,7 @@ Material:
     - _Width: 1
     - _ZWrite: 1
     m_Colors:
-    - _Center: {r: -47.56973, g: 4.879162, b: -245.28452, a: 0}
+    - _Center: {r: -40.09119, g: 4.294407, b: -246.03242, a: 0}
     - _Center1: {r: -15.768685, g: 4.9040737, b: -68.678665, a: 0}
     - _Center2: {r: -0.76, g: 5.0462074, b: -14.95, a: 0}
     - _Center3: {r: -0.76, g: 5.0462074, b: -14.95, a: 0}
@@ -98,5 +98,5 @@ Material:
     - _ColorMonster: {r: 1, g: 0, b: 0, a: 0}
     - _ColorPlayer: {r: 0.5, g: 0.5, b: 0.5, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _MonsterPos: {r: -2.633541, g: 4.78244, b: -24.252449, a: 0}
-    - _PlayerPos: {r: -2.2900002, g: 46.86386, b: 113.99, a: 0}
+    - _MonsterPos: {r: -71.21988, g: 5.4926147, b: -190.17505, a: 0}
+    - _PlayerPos: {r: -40.09119, g: 4.294407, b: -246.03242, a: 0}

@@ -29,7 +29,7 @@ public class MenuController : MonoBehaviour
     {
         Vector3 CurrentMouseMovement = lastMousePos - Input.mousePosition;
         lastMousePos = Input.mousePosition;
-       // Debug.Log(lastMousePos + "-" + Input.mousePosition + "=" + CurrentMouseMovement);
+
         string[] controllers = Input.GetJoystickNames();
 
         for (int i = 0; i < controllers.Length; i++)
@@ -59,11 +59,6 @@ public class MenuController : MonoBehaviour
             }
         }
 
-        //Debug.Log(selectorCountOptionsMenu);
-        Debug.Log(Input.GetKey(KeyCode.Joystick1Button0) + ": 0");
-        Debug.Log(Input.GetKey(KeyCode.Joystick1Button1) + ": 1");
-        Debug.Log(Input.GetKey(KeyCode.Joystick1Button3) + ": 3");
-
         //- Move Selection -//
         if (Input.GetKeyDown(KeyCode.Joystick1Button0))
         {
@@ -87,9 +82,9 @@ public class MenuController : MonoBehaviour
                 switch (selectorCountMainMenu)
                 {
                     case 0:
+                        Game.GetComponent<ResetScriptGame>().ResetGame();
                         Menu.SetActive(false);
                         Game.SetActive(true);
-                        Game.GetComponent<ResetScriptGame>().ResetGame();
                         temp = false;
                         break;
                     case 1:

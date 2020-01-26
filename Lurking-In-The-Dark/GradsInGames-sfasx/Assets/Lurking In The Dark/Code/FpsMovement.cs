@@ -71,7 +71,7 @@ public class FpsMovement : MonoBehaviour
         }
 
         if (proControllerActive == true)
-            MoveCharacter("HorizontalJoyStick", "VerticalJoyStick", "VerticalJoyStickRight", "HorizontalJoyStickRight", KeyCode.Joystick1Button0, true); //REPLACED BUTTON REPLACE THIS
+            MoveCharacter("HorizontalJoyStick", "VerticalJoyStick", "VerticalJoyStickRight", "HorizontalJoyStickRight", KeyCode.Joystick1Button0, true);
         else if (keyboardActive == true)
             MoveCharacter("Vertical", "Horizontal", "Mouse Y", "Mouse X", KeyCode.Space, false);
     }

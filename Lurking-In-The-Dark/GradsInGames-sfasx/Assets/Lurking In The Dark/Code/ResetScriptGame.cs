@@ -46,7 +46,7 @@ public class ResetScriptGame : MonoBehaviour
         Camera.transform.localEulerAngles = new Vector3(0, 0, 0);
         Player.transform.localPosition = playerStartingPos;
         Monster.transform.localPosition = mosnterStartingPos;
-        for (int i = 0; i < PagesInGame.Length; i++)
+        for (int i = 0; i <PagesInGame.Length ; i++)
         {
             UiPages.CollectedPage[i] = false;
             PagesInGame[i].SetActive(true);

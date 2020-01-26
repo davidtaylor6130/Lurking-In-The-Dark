@@ -69,7 +69,6 @@ public class LookingAtPlayer : MonoBehaviour
     {
         if (objectCollided.gameObject.name == "Player")
         {
-            //Debug.Log(Radar.breathing + "<" + viewingRange);
             // can the monster see the player (Holding breath mechanic)
             if (Radar.breathing < viewingRange && DamageCount != Eyes.Length && damageAudioSource.isPlaying == false)
             {
@@ -88,7 +87,6 @@ public class LookingAtPlayer : MonoBehaviour
                 eating.SetBool("Dead", true);
 
                 PlayerSpotted = true;
-                //Debug.Log("SPOTTED");
                 // sets new lookrotation vector then its applyed to the monster
 
                 Camera.gameObject.transform.position = Vector3.Lerp(Camera.gameObject.transform.position, finalCameraPosition.transform.position, speedOfCamera);
@@ -111,7 +109,6 @@ public class LookingAtPlayer : MonoBehaviour
                 {
                     Eyes[DamageCount].GetComponent<Renderer>().material = BlueEyes;
                     alreadyClicked = true;
-                    //Debug.Log("______________________MONSTER SCARED _________________");
                     
                     //Noises
                     baseMonsterNoise.Stop();

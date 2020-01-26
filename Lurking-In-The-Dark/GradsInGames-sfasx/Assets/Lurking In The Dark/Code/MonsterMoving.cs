@@ -111,7 +111,6 @@ public class MonsterMoving : MonoBehaviour
                 {
                     if (route[i].Connections[k].traveled == false)
                     {
-                        //Debug.Log("Node : " + route[i].ToString() + " Weighting : " + route[i].Connections[k].PathWeighting + " Lowest Weighting : " + LowestWeight);
                         if (route[i].Connections[k].PathWeighting <= LowestWeight)
                         {
                             LowestWeight = route[i].Connections[k].PathWeighting;
@@ -127,7 +126,6 @@ public class MonsterMoving : MonoBehaviour
             }
             if (NextNode != null)
             {
-                //Debug.Log(NextNode + "NextNode");
 
                 for (int i = 0; i < route.Count; i++)
                 {
@@ -147,7 +145,6 @@ public class MonsterMoving : MonoBehaviour
                 }
 
                 route.Add(NextNode);
-               // Debug.Log(route.Count - 1);
                 route[route.Count - 1].traveled = true;
                 LowestWeight = 99999999.0f;
                 NextNode = null;

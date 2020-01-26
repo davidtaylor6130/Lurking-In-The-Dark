@@ -21078,15 +21078,14 @@ MonoBehaviour:
   Monster: {fileID: 2064064217}
   mosnterStartingPos: {x: 10.71, y: 0.71, z: -2.98}
   PagesInGame:
-  - {fileID: 1871957954}
-  - {fileID: 418189049}
-  - {fileID: 1661711312}
-  - {fileID: 755918750}
-  - {fileID: 807996922}
-  - {fileID: 1834621929}
-  - {fileID: 1494345877}
-  - {fileID: 1815438630}
-  - {fileID: 723436670}
+  - {fileID: 1390329990}
+  - {fileID: 1208661389}
+  - {fileID: 1128888455}
+  - {fileID: 208702378}
+  - {fileID: 1524545100}
+  - {fileID: 1051009571}
+  - {fileID: 2067618541}
+  - {fileID: 1473294926}
   UiPages: {fileID: 1270162561}
   diffculty: {fileID: 1177271804}
 --- !u!4 &702853096 stripped

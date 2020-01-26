@@ -29,8 +29,6 @@ public class RadarMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Cursor.visible = true;
-        //Cursor.lockState = CursorLockMode.None;
         mat.SetFloat("_PlayerWidth", Width);
         mat.SetVector("_PlayerPos", player.transform.position);
         mat.SetFloat("_PlayerRadius", radius);
