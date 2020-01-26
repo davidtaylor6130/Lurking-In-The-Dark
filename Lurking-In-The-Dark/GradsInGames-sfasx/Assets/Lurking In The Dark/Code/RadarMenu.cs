@@ -37,6 +37,10 @@ public class RadarMenu : MonoBehaviour
         mat.SetFloat("_FadeAmmount", FadeAmount);
 
         mat.SetFloat("Time", 0);
+
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
     }
 
     public void ShutDown()

@@ -71,7 +71,7 @@ public class FpsMovement : MonoBehaviour
         }
 
         if (proControllerActive == true)
-            MoveCharacter("HorizontalJoyStick", "VerticalJoyStick", "VerticalJoyStickRight", "HorizontalJoyStickRight", KeyCode.Joystick1Button0, true);
+            MoveCharacter("HorizontalJoyStick", "VerticalJoyStick", "VerticalJoyStickRight", "HorizontalJoyStickRight", KeyCode.Joystick1Button0, true); //REPLACED BUTTON REPLACE THIS
         else if (keyboardActive == true)
             MoveCharacter("Vertical", "Horizontal", "Mouse Y", "Mouse X", KeyCode.Space, false);
     }
@@ -123,8 +123,6 @@ public class FpsMovement : MonoBehaviour
         moveDirection.y -= gravity * Time.deltaTime;
 
         rotation.y += Input.GetAxis(LookYGetAxis) * lookSpeed;
-
-        Debug.Log(rotation.x);
 
         if (Controller)
             rotation.x += Input.GetAxis(LookXGetAxis) * lookSpeed;

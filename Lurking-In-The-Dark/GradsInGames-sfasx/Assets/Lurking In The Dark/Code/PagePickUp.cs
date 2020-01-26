@@ -14,7 +14,7 @@ public class PagePickUp : MonoBehaviour
 
     void OnTriggerEnter(Collider objectCollided)
     {
-        Debug.Log("Trigger " + objectCollided.gameObject.name);
+        //Debug.Log("Trigger " + objectCollided.gameObject.name);
         if (objectCollided.gameObject.name == "Player")
         {
             PageUiElement.GetComponent<Pages_Switch>().PageFound(pageNumber);

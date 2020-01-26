@@ -101,7 +101,7 @@ public class MonsterMoving : MonoBehaviour
         route[route.Count - 1].traveled = true;
         float LowestWeight = 99999999.0f;
 
-        Debug.Log(route.Count - 1);
+        //Debug.Log(route.Count - 1);
 
         while (route[route.Count - 1] != EndingNode)
         {
@@ -147,7 +147,7 @@ public class MonsterMoving : MonoBehaviour
                 }
 
                 route.Add(NextNode);
-                Debug.Log(route.Count - 1);
+               // Debug.Log(route.Count - 1);
                 route[route.Count - 1].traveled = true;
                 LowestWeight = 99999999.0f;
                 NextNode = null;
